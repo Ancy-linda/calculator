@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
         calculator
         </title>
@@ -10,14 +11,17 @@
                 padding:0px;
                 box-sizing:border-box;
              }
-             .top{
-               margin-top:20px;
+            .tophead{
+               width:100%;
+               height:100%;
                display:grid;
                place-items:center;
+             }
+             .top{
+               margin-top:20px;
                background-color:rgb(86, 82, 82);
-               margin-left:390px;
-               margin-right:390px;
-               height:570px;
+               width:550px;
+               height:555px;
                border-radius:30px;
                box-shadow:7px 7px 9px gray;
              }
@@ -25,7 +29,7 @@
                 width:50%
                 display:grid;
                 place-items:center;
-                           
+                margin-top:19px;           
              }
              .one{
                margin-bottom:0px;
@@ -123,6 +127,7 @@
             </style>
     </head>
     <body>
+         <div class="tophead">
       <div class="top">
         <div class="whole">
             <div class="one">
@@ -158,6 +163,7 @@
     </div> 
        </div>
       </div>
+         </div>
        <script>
         x="";
          function click0(){
