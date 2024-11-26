@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        calculator
+        </title>
+        <style>
+             *{
+                margin:0px;
+                padding:0px;
+                box-sizing:border-box;
+             }
+             .top{
+               margin-top:20px;
+               display:grid;
+               place-items:center;
+               background-color:rgb(86, 82, 82);
+               margin-left:390px;
+               margin-right:390px;
+               height:570px;
+               border-radius:30px;
+               box-shadow:7px 7px 9px gray;
+             }
+             .whole{
+                width:50%
+                display:grid;
+                place-items:center;
+                           
+             }
+             .one{
+               margin-bottom:0px;
+               box-shadow:1px 3px 9px 6px gray;
+             }
+            
+             .h1{
+                margin:10px;
+                margin-left:20px;
+                width:500px;
+                height:70px;
+                padding:10px;
+                font-size:40px;
+                border:3px solid black;
+                color:black;
+             }
+             .h2{
+                width:375px;
+                height:87px;
+                background-color:#ff9800;
+                color:white;
+                padding:10px;
+                font-size:40px;
+              border-radius:20px;
+              border:2px solid #ea5c00;
+              margin-left:10px;
+             
+             }
+             .two{
+               margin:5px;
+               margin-left:0px;
+               margin-top:0px;
+               margin-bottom:15px;
+              
+             }
+             .three{
+                width:375px;
+                height:300px;
+                margin-right:300px;
+                margin-left:10px;
+                background-color: #c1daf2;
+                border-radius:10px;
+                box-shadow:1px 0px 9px 6px gray;
+             }
+             .h3{
+                margin:10px;
+                padding:10px;
+                width:70px;
+                height:70px;
+                border-radius:50%;
+                background-color:#2196f3;
+                color:white;
+                border:2px solid #1565c0;
+                font-size:40px;
+             }
+             .h4{
+                width:70px;
+                height:70px;
+                background-color:#66bb6a;
+                border:2px solid #09510e;
+                font-size:40px;
+                color:white;
+                margin:10px;
+                padding:10px;
+                border-radius:50%;
+                margin-top:12px;
+             }
+             .four{
+                width:100px;
+                height:400px;
+                background-color:#b3dcb4;
+                border-radius:10px;
+                margin:10px;
+                box-shadow:1px 3px 9px 6px gray;
+             }
+             .mid{
+                display:flex;
+             }
+             
+             .hv{
+                background-color:#ab53ee;
+                border:2px solid #590a95;
+                margin:10px;
+                padding:10px;
+                width:70px;
+                height:70px;
+                border-radius:50%;
+                color:white;
+                font-size:40px;
+             }
+             .cb{
+                margin:10px;
+                width:380px;
+             }
+            </style>
+    </head>
+    <body>
+      <div class="top">
+        <div class="whole">
+            <div class="one">
+               
+                <input type="text" class="h1" name="number" value="0" id="a1">  
+        </div>
+        <div class="mid">
+            <div class="cb">
+        <div class="two">
+            <input type="button" class="h2"  value="CLEAR ENTRY" onclick="clickclear()">
+        </div>     
+        <div class="three">
+            <input type="button" class="h3" value="0" onclick="click0()">
+            <input type="button" class="h3" value="1" onclick="click1()">
+            <input type="button" class="h3" value="2" onclick="click2()">
+            <input type="button" class="h3" value="3" onclick="click3()">
+            <input type="button" class="h3" value="4" onclick="click4()">
+            <input type="button" class="h3" value="5" onclick="click5()">
+            <input type="button" class="h3" value="6" onclick="click6()">
+            <input type="button" class="h3" value="7" onclick="click7()">
+            <input type="button" class="h3" value="8" onclick="click8()">
+            <input type="button" class="h3" value="9" onclick="click9()">
+            <input type="button" class="h3" value="." onclick="click10()">
+            <input type="button" class="hv" value="=" onclick="click11()">
+        </div> 
+    </div>
+        <div class="four">
+            <input type="button" class="h4" value="+" onclick="click12()">
+            <input type="button" class="h4" value="-" onclick="click13()">
+            <input type="button" class="h4" value="*" onclick="click14()">
+            <input type="button" class="h4" value="/" onclick="click15()">
+        </div>
+    </div> 
+       </div>
+      </div>
+       <script>
+        x="";
+         function click0(){
+            x=x+"0";
+            document.getElementById("a1").value=x;
+         }
+         function click1(){
+              x=x+"1";
+            document.getElementById("a1").value=x;
+         }
+         function click2(){
+            x=x+"2";
+            document.getElementById("a1").value=x;
+         }
+         function click3(){
+            x=x+"3";
+            document.getElementById("a1").value=x;
+         }
+         function click4(){
+            x=x+"4";
+            document.getElementById("a1").value=x;
+         }
+         function click5(){
+            x=x+"5";
+            document.getElementById("a1").value=x;
+         }
+         function click6(){
+            x=x+"6";
+            document.getElementById("a1").value=x;
+         }
+         function click7(){
+            x=x+"7";
+            document.getElementById("a1").value=x;
+         }
+         function click8(){
+            x=x+"8";
+            document.getElementById("a1").value=x;
+         }
+         function click9(){
+            x=x+"9";
+            document.getElementById("a1").value=x;
+         }
+         function click10(){
+            x=x+".";
+            document.getElementById("a1").value=x;
+         }
+         function click11(){
+            x=eval(x);
+            document.getElementById("a1").value=x;
+         }
+         function click12(){
+            x=x+"+";
+            document.getElementById("a1").value=x;
+         }
+         function click13(){
+            x=x+"-";
+            document.getElementById("a1").value=x;
+         }
+         function click14(){
+            x=x+"*";
+            document.getElementById("a1").value=x;
+         }
+         function click15(){
+            x=x+"/";
+            document.getElementById("a1").value=x;
+         }
+         function clickclear(){
+            x="";
+            document.getElementById("a1").value="0";
+         }
+         </script>
+        <html>
